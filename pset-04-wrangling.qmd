@@ -43,7 +43,7 @@ library(httr2)
 request <- request(url) |>
   req_url_query(
     get = "POP_2020,POP_2021,NAME",
-    "for" = "state:*",
+    `for` = "state:*",
     key = census_key
   )
 request
